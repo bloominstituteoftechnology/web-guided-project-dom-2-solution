@@ -14,9 +14,11 @@ const get = selector => {
 const launchButton = get('#launchButton')
 const confirmButton = get('#confirmButton')
 const cancelButton = get('#cancelButton')
+
 // MESSAGES
 const successMessage = get('h1.success')
 const failureMessage = get('h1.failure')
+
 // MODAL
 const modal = get('div.modal')
 const modalOpacity = get('div.modal-opacity')
@@ -63,9 +65,10 @@ function escKey(event) {
 document.addEventListener('keydown', escKey)
 
 
-// 7- Add to document an event listener for click events.
-// It should console.dir the target of the event.
-// Play with stopPropagation and stopImmediatePropagation
+// 7- Add to ALL ELEMENTS ON THE PAGE an event listener for click events.
+// It should console.log the target 🎯 of the event.
+// It should also console.log the CURRENT target 🧭 of the event.
+// Play with stopPropagation and stopImmediatePropagation.
 Array.from(document.all).forEach(elem => elem.addEventListener('click', event => {
   console.log('🎯 target:        ', event.target)
   console.log('🧭 current target:', event.currentTarget)
@@ -78,7 +81,15 @@ modal.addEventListener('click', event => {
 })
 
 
-// 8- [STRETCH] Create helper functions
+// 8- Create a link and prevent its default behavior
+
+
+// 9- Using the mouseOver event on 'document',
+// log to the console the X and Y coordinates
+// of the mouse pointer, as it moves over the screen.
+
+
+// 10- [STRETCH] Create helper functions
 function openModal() {
 
 }
@@ -90,10 +101,3 @@ function closeModal() {
 function killReports() {
 
 }
-
-
-// 9- Using the mouseOver event on 'document',
-// log to the console the X and Y coordinates
-// of the mouse pointer, as it moves over the screen.
-
-// 10- Create a link and prevent its default behavior
