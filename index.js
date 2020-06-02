@@ -1,27 +1,32 @@
 console.log('project is up')
 
-// 👉 TASK 1- Create a function called 'get'
-// that takes a CSS selector as its argument
-// and executes document.querySelector with the argument.
-const get = selector => {
-  return document.querySelector(selector)
-}
+// 👉 TASK 1- Demo handling click events on button#launchButton, using:
+//      - HTML
+//      - The DOM's element.onclick
+//      - element.addEventListener()
+document.querySelector('#launchButton')
+  .onclick = () => console.log('setting the onclick using JS')
+
+document.querySelector('#launchButton')
+  .addEventListener('click', event => {
+    console.log('adding a click listener')
+  })
 
 
-// 👉 TASK 2- Using 'get', select the following elements from the DOM:
+// 👉 TASK 2- Select the following elements from the DOM:
 
 // BUTTONS
-const launchButton = get('#launchButton')
-const confirmButton = get('#confirmButton')
-const cancelButton = get('#cancelButton')
+const launchButton = document.querySelector('#launchButton')
+const confirmButton = document.querySelector('#confirmButton')
+const cancelButton = document.querySelector('#cancelButton')
 
 // MESSAGES
-const successMessage = get('h1.success')
-const failureMessage = get('h1.failure')
+const successMessage = document.querySelector('h1.success')
+const failureMessage = document.querySelector('h1.failure')
 
 // MODAL
-const modal = get('div.modal')
-const modalOpacity = get('div.modal-opacity')
+const modal = document.querySelector('div.modal')
+const modalOpacity = document.querySelector('div.modal-opacity')
 
 
 // 👉 TASK 3- Create a function that launches!
