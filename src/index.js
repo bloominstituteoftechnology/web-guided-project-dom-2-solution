@@ -1,19 +1,6 @@
 console.log('project is up')
 
-// 👉 TASK 1- Demo handling click events on button#launchButton, using:
-//      - HTML
-//      - The DOM's element.onclick
-//      - element.addEventListener()
-document.querySelector('#launchButton')
-  .onclick = () => console.log('setting the onclick using JS')
-
-document.querySelector('#launchButton')
-  .addEventListener('click', event => {
-    console.log('adding a click listener')
-  })
-
-
-// 👉 TASK 2- Select the following elements from the DOM:
+// 👉 TASK 1- Select the following elements from the DOM:
 
 // BUTTONS
 const launchButton = document.querySelector('#launchButton')
@@ -26,7 +13,19 @@ const failureMessage = document.querySelector('h1.failure')
 
 // MODAL
 const modal = document.querySelector('div.modal')
-const modalOpacity = document.querySelector('div.modal-opacity')
+
+
+// 👉 TASK 2- Demo handling click events on button#launchButton, using:
+//      - HTML
+//      - The DOM's element.onclick
+//      - element.addEventListener()
+document.querySelector('#launchButton')
+  .onclick = () => console.log('setting the onclick using JS')
+
+document.querySelector('#launchButton')
+  .addEventListener('click', event => {
+    console.log('adding a click listener')
+  })
 
 
 // 👉 TASK 3- Create a function that launches!
@@ -89,7 +88,7 @@ modal.addEventListener('click', event => {
 // 👉 TASK 8- Select a link and prevent its default behavior
 
 
-// 👉 TASK 9- Using the mouseOver event on 'document',
+// 👉 TASK 9- Using the mouseover event on 'document',
 // log to the console the X and Y coordinates
 // of the mouse pointer, as it moves over the screen.
 
