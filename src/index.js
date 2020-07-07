@@ -86,7 +86,7 @@ modal.addEventListener('click', event => {
 })
 
 
-// 👉 TASK 8- Create a link and prevent its default behavior
+// 👉 TASK 8- Select a link and prevent its default behavior
 
 
 // 👉 TASK 9- Using the mouseOver event on 'document',
