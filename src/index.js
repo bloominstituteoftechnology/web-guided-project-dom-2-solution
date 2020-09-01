@@ -19,13 +19,28 @@ const modal = document.querySelector('div.modal')
 //      - HTML
 //      - The DOM's element.onclick
 //      - element.addEventListener()
-document.querySelector('#launchButton')
-  .onclick = () => console.log('setting the onclick using JS')
-
-document.querySelector('#launchButton')
-  .addEventListener('click', event => {
-    console.log('adding a click listener')
+launchButton.onclick = function (event) {
+  // console.log('clicking less old school')
+}
+launchButton.addEventListener('click', function (event) {
+  // console.log('clicking also')
+})
+launchButton.addEventListener('click', function (event) {
+  // console.log('clicking some  more')
+})
+document.addEventListener('click', function (event) {
+  if (event.target === launchButton) {
+    // console.log('clicking on the launch button')
+  } else {
+    // console.log('clickig somewhere else in the document')
+  }
+})
+Array.from(document.links).forEach(lk => {
+  lk.addEventListener('click', function (event) {
+    event.preventDefault()
+    console.log(`The "${event.target.textContent}" link is not taking you anywhere`)
   })
+})
 
 
 // 👉 TASK 3- Create a function that launches!
