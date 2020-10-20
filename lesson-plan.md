@@ -11,6 +11,7 @@
 ## 2- Instructor's Checklist of Things to Cover
 
 * Project architecture: the script tag and the defer attribute.
+* Project architecture: the `package.json` file.
 * Event-driven programs: they wait for the user to do something.
 * JS programs need the help of their environment.
 * Events in the DOM and their types.
