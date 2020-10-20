@@ -116,7 +116,7 @@ modal.addEventListener('click', event => {
 })
 
 
-// 👉 TASK 9- [STRETCH] Create helper functions to make the code
+// 👉 TASK 8- [STRETCH] Create helper functions to make the code
 // more readable in tasks 3, 4, 5, 6
 function openModal() {
 
@@ -131,6 +131,6 @@ function killReports() {
 }
 
 
-// 👉 TASK 10- [STRETCH] Using the mouseover event on 'document',
+// 👉 TASK 9- [STRETCH] Using the mouseover event on 'document',
 // log to the console the X and Y coordinates
 // of the mouse pointer, as it moves over the screen.
